@@ -1,0 +1,16 @@
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+rabbitmq:
+  queue:
+    registration:
+      name: registrationEmail_queue
+  exchange:
+    registration:
+      name: registrationEmail_exchange
+  binding:
+    registration:
+      name: registrationEmail_routingKey
